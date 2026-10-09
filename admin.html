@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Stackly Wellness</title>
+  <meta name="description" content="Stackly Wellness admin overview — bookings, members, KPIs, and service management stubs.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dash-body">
+  <div class="preloader" id="preloader" role="status" aria-label="Loading Stackly Wellness"><img src="Images/stackly-tide.webp" alt="" class="preloader__logo" width="184" height="48"><div class="preloader__bar" aria-hidden="true"><i></i></div></div>
+  <div class="dash-drawer" id="dash-drawer">
+    <div class="dash-drawer__panel">
+      <a href="index.html" class="brand brand--dash"><img src="Images/stackly-tide.webp" alt="Stackly" class="brand__logo" width="148" height="40"></a>
+      <div class="dash-user">
+        <strong data-user-name>Admin</strong>
+        <span data-user-email>guest@stackly.wellness</span>
+      </div>
+      <a href="#overview" data-dash-nav class="is-active"><i class="fa-solid fa-chart-line"></i> Overview</a>
+      <a href="#bookings" data-dash-nav><i class="fa-solid fa-calendar-check"></i> Bookings</a>
+      <a href="#members" data-dash-nav><i class="fa-solid fa-users"></i> Members</a>
+      <a href="#services" data-dash-nav><i class="fa-solid fa-spa"></i> Services</a>
+      <a href="#" data-logout><i class="fa-solid fa-right-from-bracket"></i> Sign out</a>
+      <button type="button" class="btn btn--ghost" data-dash-close style="margin-top:1rem;border-color:rgba(255,255,255,0.2)">Close</button>
+    </div>
+  </div>
+
+  <div class="dash-shell">
+    <aside class="dash-sidebar" aria-label="Admin navigation">
+      <a href="index.html" class="brand brand--dash"><img src="Images/stackly-tide.webp" alt="Stackly" class="brand__logo" width="148" height="40"></a>
+      <div class="dash-user">
+        <strong data-user-name>Admin</strong>
+        <span data-user-email>guest@stackly.wellness</span>
+      </div>
+      <a href="#overview" data-dash-nav class="is-active"><i class="fa-solid fa-chart-line"></i> Overview</a>
+      <a href="#bookings" data-dash-nav><i class="fa-solid fa-calendar-check"></i> Bookings</a>
+      <a href="#members" data-dash-nav><i class="fa-solid fa-users"></i> Members</a>
+      <a href="#services" data-dash-nav><i class="fa-solid fa-spa"></i> Services</a>
+      <a href="#" data-logout style="margin-top:auto"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a>
+    </aside>
+
+    <div class="dash-main">
+      <div class="dash-topbar">
+        <div style="display:flex;align-items:center;gap:0.75rem">
+          <button type="button" class="dash-menu-btn" data-dash-open aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+          <div>
+            <h1>Operations overview</h1>
+            <p>Signed in as <span data-user-name>Admin</span></p>
+          </div>
+        </div>
+        <a href="404.html" class="btn btn--outline" data-dash-nav>Front desk</a>
+      </div>
+
+      <!-- Overview -->
+      <div class="dash-view is-active" data-dash-view="overview">
+        <div class="dash-kpis">
+          <div class="kpi-card">
+            <div class="kpi-card__label">Today’s bookings</div>
+            <div class="kpi-card__value">18</div>
+            <div class="kpi-card__hint">+3 vs yesterday</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-card__label">Active members</div>
+            <div class="kpi-card__value">642</div>
+            <div class="kpi-card__hint">12 new this week</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-card__label">Utilization</div>
+            <div class="kpi-card__value">81%</div>
+            <div class="kpi-card__hint">Suites &amp; hydro</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-card__label">Revenue (week)</div>
+            <div class="kpi-card__value" style="font-size:1.35rem">$24.8k</div>
+            <div class="kpi-card__hint">Membership + retail</div>
+          </div>
+        </div>
+
+        <div class="dash-grid dash-grid--2">
+          <section class="dash-panel">
+            <div class="dash-panel__head">
+              <h2>Today’s floor</h2>
+              <a href="404.html" data-dash-nav class="link-draw">All bookings</a>
+            </div>
+            <div class="session-list">
+              <div class="session-item">
+                <div class="session-item__date"><strong>14</strong><span>00</span></div>
+                <div>
+                  <h3>Restorative Massage · Leah V.</h3>
+                  <p>Mira Chen · Suite 3 · Confirmed</p>
+                </div>
+              </div>
+              <div class="session-item">
+                <div class="session-item__date"><strong>16</strong><span>30</span></div>
+                <div>
+                  <h3>Night Tide Reset · Marcus D.</h3>
+                  <p>Elias Rowe · Hydro wing · Pending deposit</p>
+                </div>
+              </div>
+              <div class="session-item">
+                <div class="session-item__date"><strong>17</strong><span>15</span></div>
+                <div>
+                  <h3>Lunar Facial · Priya N.</h3>
+                  <p>Anika Sol · Suite 1 · Confirmed</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="dash-panel">
+            <div class="dash-panel__head"><h2>Desk alerts</h2></div>
+            <div class="dash-tips">
+              <article class="dash-tip">
+                <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+                <div>
+                  <h3>2 pending deposits</h3>
+                  <p>Marcus D. and Elena R. still need card holds before evening suites open.</p>
+                </div>
+              </article>
+              <article class="dash-tip">
+                <i class="fa-solid fa-users" aria-hidden="true"></i>
+                <div>
+                  <h3>3 renewals due</h3>
+                  <p>Seed members with renewal in the next 7 days — desk script ready.</p>
+                </div>
+              </article>
+              <article class="dash-tip">
+                <i class="fa-solid fa-temperature-half" aria-hidden="true"></i>
+                <div>
+                  <h3>Hydro pool check</h3>
+                  <p>Morning mineral reading logged · next check at 15:00.</p>
+                </div>
+              </article>
+            </div>
+            <div class="dash-inline-actions" style="margin-top:1rem">
+              <a href="404.html" class="btn btn--outline" data-dash-nav>Review members</a>
+              <a href="404.html" class="btn btn--ghost" data-dash-nav>Services</a>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Bookings -->
+      <div class="dash-view" data-dash-view="bookings" hidden>
+        <div class="dash-kpis">
+          <div class="kpi-card">
+            <div class="kpi-card__label">Confirmed</div>
+            <div class="kpi-card__value">11</div>
+            <div class="kpi-card__hint">Today</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-card__label">Pending</div>
+            <div class="kpi-card__value">4</div>
+            <div class="kpi-card__hint">Need deposit</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-card__label">Completed</div>
+            <div class="kpi-card__value">3</div>
+            <div class="kpi-card__hint">This morning</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-card__label">Waitlist</div>
+            <div class="kpi-card__value">6</div>
+            <div class="kpi-card__hint">Night tide</div>
+          </div>
+        </div>
+
+        <section class="dash-panel">
+          <div class="dash-panel__head">
+            <h2>Recent bookings</h2>
+            <span class="badge badge--info">Live demo</span>
+          </div>
+          <p class="dash-lead">Tap a status badge to cycle Confirmed → Pending → Completed.</p>
+          <div class="table-wrap">
+            <table class="data-table stack-mobile">
+              <thead>
+                <tr>
+                  <th>Guest</th>
+                  <th>Service</th>
+                  <th>When</th>
+                  <th>Therapist</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Guest">Leah V.</td>
+                  <td data-label="Service">Restorative Massage</td>
+                  <td data-label="When">Today · 14:00</td>
+                  <td data-label="Therapist">Mira Chen</td>
+                  <td data-label="Status"><button type="button" class="badge badge--ok" data-status-cycle>Confirmed</button></td>
+                </tr>
+                <tr>
+                  <td data-label="Guest">Marcus D.</td>
+                  <td data-label="Service">Night Tide Reset</td>
+                  <td data-label="When">Today · 16:30</td>
+                  <td data-label="Therapist">Elias Rowe</td>
+                  <td data-label="Status"><button type="button" class="badge badge--warn" data-status-cycle>Pending</button></td>
+                </tr>
+                <tr>
+                  <td data-label="Guest">Priya N.</td>
+                  <td data-label="Service">Lunar Facial</td>
+                  <td data-label="When">Today · 17:15</td>
+                  <td data-label="Therapist">Anika Sol</td>
+                  <td data-label="Status"><button type="button" class="badge badge--ok" data-status-cycle>Confirmed</button></td>
+                </tr>
+                <tr>
+                  <td data-label="Guest">Jonah A.</td>
+                  <td data-label="Service">Mind Studio</td>
+                  <td data-label="When">Tomorrow · 07:15</td>
+                  <td data-label="Therapist">Jonah Park</td>
+                  <td data-label="Status"><button type="button" class="badge badge--info" data-status-cycle>Completed</button></td>
+                </tr>
+                <tr>
+                  <td data-label="Guest">Elena R.</td>
+                  <td data-label="Service">Salt Mineral Wrap</td>
+                  <td data-label="When">Tomorrow · 11:00</td>
+                  <td data-label="Therapist">Mira Chen</td>
+                  <td data-label="Status"><button type="button" class="badge badge--warn" data-status-cycle>Pending</button></td>
+                </tr>
+                <tr>
+                  <td data-label="Guest">Sam K.</td>
+                  <td data-label="Service">Contrast Hydro</td>
+                  <td data-label="When">Tomorrow · 15:00</td>
+                  <td data-label="Therapist">Elias Rowe</td>
+                  <td data-label="Status"><button type="button" class="badge badge--ok" data-status-cycle>Confirmed</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <div class="dash-grid dash-grid--2" style="margin-top:1.25rem">
+          <section class="dash-panel">
+            <div class="dash-panel__head"><h2>Waitlist</h2></div>
+            <div class="visit-list">
+              <div class="visit-item">
+                <div>
+                  <h3>Friday Night Tide</h3>
+                  <p>4 guests · prefer after 19:00</p>
+                </div>
+                <button type="button" class="btn btn--outline btn--tiny">Notify</button>
+              </div>
+              <div class="visit-item">
+                <div>
+                  <h3>Sunday quieter book</h3>
+                  <p>2 guests · facial + lounge</p>
+                </div>
+                <button type="button" class="btn btn--outline btn--tiny">Notify</button>
+              </div>
+            </div>
+          </section>
+          <section class="dash-panel">
+            <div class="dash-panel__head"><h2>Desk notes</h2></div>
+            <div class="dash-tips">
+              <article class="dash-tip">
+                <i class="fa-solid fa-door-open" aria-hidden="true"></i>
+                <div>
+                  <h3>Suite 2 turnaround</h3>
+                  <p>Allow 25 minutes after deep bodywork before next guest.</p>
+                </div>
+              </article>
+              <article class="dash-tip">
+                <i class="fa-solid fa-car" aria-hidden="true"></i>
+                <div>
+                  <h3>Valet from 17:00</h3>
+                  <p>Confirm valet for any booking after 16:45 on Tideglass Lane.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Members -->
+      <div class="dash-view" data-dash-view="members" hidden>
+        <div class="dash-kpis">
+          <div class="kpi-card">
+            <div class="kpi-card__label">Seed</div>
+            <div class="kpi-card__value">186</div>
+            <div class="kpi-card__hint">$89 / mo</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-card__label">Bloom</div>
+            <div class="kpi-card__value">312</div>
+            <div class="kpi-card__hint">$169 / mo</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-card__label">Canopy</div>
+            <div class="kpi-card__value">144</div>
+            <div class="kpi-card__hint">$289 / mo</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-card__label">At risk</div>
+            <div class="kpi-card__value">9</div>
+            <div class="kpi-card__hint">Renewal due</div>
+          </div>
+        </div>
+
+        <section class="dash-panel">
+          <div class="dash-panel__head">
+            <h2>Members</h2>
+            <a href="404.html" class="link-draw">Export</a>
+          </div>
+          <p class="dash-lead">Demo roster — filter and messaging stubs for the front desk.</p>
+          <div class="table-wrap">
+            <table class="data-table stack-mobile">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Plan</th>
+                  <th>Visits</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Name">Leah Voss</td>
+                  <td data-label="Plan">Bloom</td>
+                  <td data-label="Visits">11 YTD</td>
+                  <td data-label="Status"><span class="badge badge--ok">Active</span></td>
+                </tr>
+                <tr>
+                  <td data-label="Name">Marcus Diaz</td>
+                  <td data-label="Plan">Canopy</td>
+                  <td data-label="Visits">19 YTD</td>
+                  <td data-label="Status"><span class="badge badge--ok">Active</span></td>
+                </tr>
+                <tr>
+                  <td data-label="Name">Priya Nair</td>
+                  <td data-label="Plan">Seed</td>
+                  <td data-label="Visits">4 YTD</td>
+                  <td data-label="Status"><span class="badge badge--warn">Renewal due</span></td>
+                </tr>
+                <tr>
+                  <td data-label="Name">Elena Ruiz</td>
+                  <td data-label="Plan">Bloom</td>
+                  <td data-label="Visits">8 YTD</td>
+                  <td data-label="Status"><span class="badge badge--ok">Active</span></td>
+                </tr>
+                <tr>
+                  <td data-label="Name">Sam Kim</td>
+                  <td data-label="Plan">Seed</td>
+                  <td data-label="Visits">2 YTD</td>
+                  <td data-label="Status"><span class="badge badge--warn">Renewal due</span></td>
+                </tr>
+                <tr>
+                  <td data-label="Name">Jonah Adeyemi</td>
+                  <td data-label="Plan">Canopy</td>
+                  <td data-label="Visits">22 YTD</td>
+                  <td data-label="Status"><span class="badge badge--ok">Active</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <div class="dash-grid dash-grid--2" style="margin-top:1.25rem">
+          <section class="dash-panel">
+            <div class="dash-panel__head"><h2>Retention focus</h2></div>
+            <div class="dash-tips">
+              <article class="dash-tip">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <div>
+                  <h3>Renewal emails</h3>
+                  <p>Send soft reminders 5 days before Seed renewals with one complimentary hydro invite.</p>
+                </div>
+              </article>
+              <article class="dash-tip">
+                <i class="fa-solid fa-gift" aria-hidden="true"></i>
+                <div>
+                  <h3>Bloom upsell</h3>
+                  <p>Members with 8+ visits this quarter are strong Canopy candidates.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="dash-panel">
+            <div class="dash-panel__head"><h2>New this week</h2></div>
+            <div class="visit-list">
+              <div class="visit-item">
+                <div>
+                  <h3>Ava Chen</h3>
+                  <p>Seed · joined Mon · first visit Thu</p>
+                </div>
+                <span class="badge badge--ok">New</span>
+              </div>
+              <div class="visit-item">
+                <div>
+                  <h3>Noah Patel</h3>
+                  <p>Bloom · joined Wed · referred by Leah</p>
+                </div>
+                <span class="badge badge--ok">New</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="dash-view" data-dash-view="services" hidden>
+        <div class="dash-kpis">
+          <div class="kpi-card">
+            <div class="kpi-card__label">Active rituals</div>
+            <div class="kpi-card__value">12</div>
+            <div class="kpi-card__hint">Bookable online</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-card__label">Guides on floor</div>
+            <div class="kpi-card__value">6</div>
+            <div class="kpi-card__hint">Today</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-card__label">Suite util.</div>
+            <div class="kpi-card__value">84%</div>
+            <div class="kpi-card__hint">Peak afternoon</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-card__label">Hydro util.</div>
+            <div class="kpi-card__value">76%</div>
+            <div class="kpi-card__hint">Steady</div>
+          </div>
+        </div>
+
+        <div class="dash-grid dash-grid--2">
+          <section class="dash-panel">
+            <div class="dash-panel__head">
+              <h2>Service management</h2>
+              <span class="badge badge--info">Stub</span>
+            </div>
+            <div class="visit-list">
+              <div class="visit-item">
+                <div>
+                  <h3>Signature Restorative Massage</h3>
+                  <p>60 / 90 min · from $128 · 3 guides certified</p>
+                </div>
+                <button type="button" class="btn btn--outline btn--tiny">Edit</button>
+              </div>
+              <div class="visit-item">
+                <div>
+                  <h3>Contrast Hydro Circuit</h3>
+                  <p>70 min · from $95 · mineral wing</p>
+                </div>
+                <button type="button" class="btn btn--outline btn--tiny">Edit</button>
+              </div>
+              <div class="visit-item">
+                <div>
+                  <h3>Lunar Mineral Facial</h3>
+                  <p>50 / 80 min · from $110 · Suite 1 preference</p>
+                </div>
+                <button type="button" class="btn btn--outline btn--tiny">Edit</button>
+              </div>
+              <div class="visit-item">
+                <div>
+                  <h3>Mind Studio Stillness</h3>
+                  <p>40 / 60 min · from $48 · Studio B</p>
+                </div>
+                <button type="button" class="btn btn--outline btn--tiny">Edit</button>
+              </div>
+              <div class="visit-item">
+                <div>
+                  <h3>Salt Mineral Wrap</h3>
+                  <p>75 min · from $142 · heat recovery</p>
+                </div>
+                <button type="button" class="btn btn--outline btn--tiny">Edit</button>
+              </div>
+              <div class="visit-item">
+                <div>
+                  <h3>Night Tide Reset</h3>
+                  <p>90 min · from $168 · Fri–Sat only</p>
+                </div>
+                <button type="button" class="btn btn--outline btn--tiny">Edit</button>
+              </div>
+            </div>
+            <button type="button" class="btn btn--primary btn--block" style="margin-top:1rem">Add service stub</button>
+          </section>
+
+          <div>
+            <section class="dash-panel">
+              <div class="dash-panel__head"><h2>Guides on duty</h2></div>
+              <div class="visit-list">
+                <div class="visit-item">
+                  <div>
+                    <h3>Mira Chen</h3>
+                    <p>Massage · Suite 3 · until 20:00</p>
+                  </div>
+                  <span class="badge badge--ok">On floor</span>
+                </div>
+                <div class="visit-item">
+                  <div>
+                    <h3>Elias Rowe</h3>
+                    <p>Hydro · mineral wing · until 21:00</p>
+                  </div>
+                  <span class="badge badge--ok">On floor</span>
+                </div>
+                <div class="visit-item">
+                  <div>
+                    <h3>Anika Sol</h3>
+                    <p>Facial · Suite 1 · until 18:00</p>
+                  </div>
+                  <span class="badge badge--info">Break 15:00</span>
+                </div>
+                <div class="visit-item">
+                  <div>
+                    <h3>Jonah Park</h3>
+                    <p>Mind Studio · early shift done</p>
+                  </div>
+                  <span class="badge badge--warn">Off</span>
+                </div>
+              </div>
+            </section>
+            <section class="dash-panel" style="margin-top:1.25rem">
+              <div class="dash-panel__head"><h2>Room notes</h2></div>
+              <div class="dash-tips">
+                <article class="dash-tip">
+                  <i class="fa-solid fa-spa" aria-hidden="true"></i>
+                  <div>
+                    <h3>Suite 2 linen</h3>
+                    <p>Restock cool towels before the 16:30 Night Tide reset.</p>
+                  </div>
+                </article>
+                <article class="dash-tip">
+                  <i class="fa-solid fa-water" aria-hidden="true"></i>
+                  <div>
+                    <h3>Plunge temperature</h3>
+                    <p>Hold cool circuit at 14°C for evening members.</p>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/preloader.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/dash.js"></script>
+</body>
+</html>

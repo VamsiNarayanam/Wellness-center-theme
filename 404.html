@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Stackly Wellness</title>
+  <meta name="description" content="This Stackly Wellness page could not be found.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="error-body">
+  <div class="preloader" id="preloader" role="status" aria-label="Loading Stackly Wellness"><img src="Images/stackly-tide.webp" alt="" class="preloader__logo" width="184" height="48"><div class="preloader__bar" aria-hidden="true"><i></i></div></div>
+
+  <main class="error-screen" aria-label="Page not found">
+    <div class="error-screen__media" aria-hidden="true">
+      <img src="Images/wellness/wellness-pool.webp" alt="" width="1600" height="1000">
+    </div>
+    <div class="error-screen__veil" aria-hidden="true"></div>
+    <div class="error-screen__content">
+      <p class="error-screen__kicker">Page not found</p>
+      <p class="error-screen__code" aria-hidden="true">404</p>
+      <h1>This tide went out</h1>
+      <p class="error-screen__lead">The page you’re looking for isn’t here. Head home or step back to where you were.</p>
+      <div class="btn-group error-screen__actions">
+        <a href="index.html" class="btn btn--primary">Back home</a>
+        <button type="button" class="btn btn--ghost" onclick="history.back()">Go back</button>
+      </div>
+    </div>
+  </main>
+  <script src="js/preloader.js"></script>
+</body>
+</html>

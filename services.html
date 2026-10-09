@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Stackly Wellness Rituals &amp; Treatments</title>
+  <meta name="description" content="Browse Stackly Wellness rituals — massage, movement, facials, hydro &amp; heat, detox, and mind studio — with timing and pricing guidance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="preloader" id="preloader" role="status" aria-label="Loading Stackly Wellness"><img src="Images/stackly-tide.webp" alt="" class="preloader__logo" width="184" height="48"><div class="preloader__bar" aria-hidden="true"><i></i></div></div>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="brand" aria-label="Stackly Wellness home">
+        <img src="Images/stackly-tide.webp" alt="Stackly" class="brand__logo" width="148" height="40">
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blogs.html">Journal</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="login.html" class="btn btn--outline">Sign In</a>
+        <a href="register.html" class="btn btn--primary">Register</a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="blogs.html">Journal</a><a href="contact.html">Contact</a><a href="login.html">Sign In</a>
+    <a href="register.html" class="btn btn--primary">Register</a>
+  </nav>
+
+  <main>
+    <section class="page-hero" aria-label="Services hero">
+      <div class="page-hero__media">
+        <img src="Images/wellness/contact-spa.webp" alt="Spa treatment tools arranged for a mineral ritual" width="1600" height="900">
+      </div>
+      <div class="page-hero__veil" aria-hidden="true"></div>
+      <div class="page-hero__content">
+        <p class="section-kicker page-hero__kicker">Services</p>
+        <h1>Rituals for every kind of fatigue</h1>
+        <p class="page-hero__support">Filter by pathway, then book the treatment that matches your evening — not a generic package.</p>
+        <div class="btn-group page-hero__actions">
+          <a href="404.html" class="btn btn--primary">Browse rituals</a>
+          <a href="404.html" class="btn btn--ghost">Book a session</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="service-list" id="service-list">
+          <article class="service-detail" data-category="massage" data-aos="fade-up">
+            <div class="service-detail__media">
+              <img src="Images/wellness/service-massage.webp" alt="Restorative massage on warm linen" width="900" height="700">
+              <span class="service-detail__badge">60 / 90 min</span>
+            </div>
+            <div class="service-detail__body">
+              <span class="service-detail__index">Ritual 01</span>
+              <span class="service-detail__cat">Massage</span>
+              <h2>Signature Restorative Massage</h2>
+              <p>Slow-pressure bodywork focused on fascia length and breath pacing. Ideal after travel or dense desk weeks.</p>
+              <ul class="service-detail__points">
+                <li>Fascia-length pacing</li>
+                <li>Breath-led pressure</li>
+                <li>Desk &amp; travel recovery</li>
+              </ul>
+              <div class="service-detail__meta">
+                <span class="service-detail__price">from $128</span>
+              </div>
+              <a href="404.html" class="btn btn--primary">Book massage</a>
+            </div>
+          </article>
+
+          <article class="service-detail service-detail--flip" data-category="movement" data-aos="fade-up">
+            <div class="service-detail__media">
+              <img src="Images/wellness/service-yoga.webp" alt="Guided restorative movement class" width="900" height="700">
+              <span class="service-detail__badge">45 / 75 min</span>
+            </div>
+            <div class="service-detail__body">
+              <span class="service-detail__index">Ritual 02</span>
+              <span class="service-detail__cat">Movement</span>
+              <h2>Restorative Movement Lab</h2>
+              <p>Joint-friendly mobility and supported yoga shapes that unload the spine without performance pressure.</p>
+              <ul class="service-detail__points">
+                <li>Supported floor shapes</li>
+                <li>Spine unloading</li>
+                <li>No performance pace</li>
+              </ul>
+              <div class="service-detail__meta">
+                <span class="service-detail__price">from $58</span>
+              </div>
+              <a href="404.html" class="btn btn--primary">Book movement</a>
+            </div>
+          </article>
+
+          <article class="service-detail" data-category="facials" data-aos="fade-up">
+            <div class="service-detail__media">
+              <img src="Images/wellness/service-facial.webp" alt="Mineral facial with cool tools" width="900" height="700">
+              <span class="service-detail__badge">50 / 80 min</span>
+            </div>
+            <div class="service-detail__body">
+              <span class="service-detail__index">Ritual 03</span>
+              <span class="service-detail__cat">Facials</span>
+              <h2>Lunar Mineral Facial</h2>
+              <p>Lymphatic drainage, mineral mask, and low-scent finishing oils for skin that looks rested, not staged.</p>
+              <ul class="service-detail__points">
+                <li>Lymphatic drainage</li>
+                <li>Mineral mask</li>
+                <li>Scent-light finish</li>
+              </ul>
+              <div class="service-detail__meta">
+                <span class="service-detail__price">from $110</span>
+              </div>
+              <a href="404.html" class="btn btn--primary">Book facial</a>
+            </div>
+          </article>
+
+          <article class="service-detail service-detail--flip" data-category="hydro" data-aos="fade-up">
+            <div class="service-detail__media">
+              <img src="Images/wellness/service-sauna.webp" alt="Hydro and heat suite with soft steam" width="900" height="700">
+              <span class="service-detail__badge">70 min</span>
+            </div>
+            <div class="service-detail__body">
+              <span class="service-detail__index">Ritual 04</span>
+              <span class="service-detail__cat">Hydro &amp; Heat</span>
+              <h2>Contrast Hydro Circuit</h2>
+              <p>Guided warm–cool cycles across pool, steam, and sauna with recovery pauses between each station.</p>
+              <ul class="service-detail__points">
+                <li>Warm-to-cool pacing</li>
+                <li>Steam &amp; sauna</li>
+                <li>Guided rest pauses</li>
+              </ul>
+              <div class="service-detail__meta">
+                <span class="service-detail__price">from $95</span>
+              </div>
+              <a href="404.html" class="btn btn--primary">Book hydro</a>
+            </div>
+          </article>
+
+          <article class="service-detail" data-category="detox" data-aos="fade-up">
+            <div class="service-detail__media">
+              <img src="Images/wellness/service-detox.webp" alt="Mineral salt detox wrap preparation" width="900" height="700">
+              <span class="service-detail__badge">75 min</span>
+            </div>
+            <div class="service-detail__body">
+              <span class="service-detail__index">Ritual 05</span>
+              <span class="service-detail__cat">Detox</span>
+              <h2>Salt Mineral Wrap</h2>
+              <p>A gentle detox sequence using mineral salts and lymphatic strokes — clarifying without harsh extremes.</p>
+              <ul class="service-detail__points">
+                <li>Mineral salt wrap</li>
+                <li>Lymphatic strokes</li>
+                <li>Gentle clarification</li>
+              </ul>
+              <div class="service-detail__meta">
+                <span class="service-detail__price">from $140</span>
+              </div>
+              <a href="404.html" class="btn btn--primary">Book detox</a>
+            </div>
+          </article>
+
+          <article class="service-detail service-detail--flip" data-category="mind" data-aos="fade-up">
+            <div class="service-detail__media">
+              <img src="Images/wellness/service-mind.webp" alt="Mind studio cushions ready for breathwork" width="900" height="700">
+              <span class="service-detail__badge">40 / 60 min</span>
+            </div>
+            <div class="service-detail__body">
+              <span class="service-detail__index">Ritual 06</span>
+              <span class="service-detail__cat">Mind Studio</span>
+              <h2>Mind Studio Stillness</h2>
+              <p>Guided breath, soft sound, and seated rest in a room tuned for lowered heart rate and clearer evenings.</p>
+              <ul class="service-detail__points">
+                <li>Guided breath</li>
+                <li>Soft soundscape</li>
+                <li>Seated rest close</li>
+              </ul>
+              <div class="service-detail__meta">
+                <span class="service-detail__price">from $48</span>
+              </div>
+              <a href="404.html" class="btn btn--primary">Book mind studio</a>
+            </div>
+          </article>
+
+          <article class="service-detail" data-category="massage" data-aos="fade-up">
+            <div class="service-detail__media">
+              <img src="Images/wellness/massage-room.webp" alt="Deep tissue treatment suite" width="900" height="700">
+              <span class="service-detail__badge">75 / 100 min</span>
+            </div>
+            <div class="service-detail__body">
+              <span class="service-detail__index">Ritual 07</span>
+              <span class="service-detail__cat">Massage</span>
+              <h2>Deep Tide Bodywork</h2>
+              <p>Focused work for stubborn shoulders, hips, and calves — still paced, never rushed.</p>
+              <ul class="service-detail__points">
+                <li>Shoulders &amp; hips</li>
+                <li>Deep but paced</li>
+                <li>Longer session options</li>
+              </ul>
+              <div class="service-detail__meta">
+                <span class="service-detail__price">from $155</span>
+              </div>
+              <a href="404.html" class="btn btn--primary">Book bodywork</a>
+            </div>
+          </article>
+
+          <article class="service-detail service-detail--flip" data-category="hydro" data-aos="fade-up">
+            <div class="service-detail__media">
+              <img src="Images/wellness/wellness-pool.webp" alt="Private mineral soak lounge" width="900" height="700">
+              <span class="service-detail__badge">45 min</span>
+            </div>
+            <div class="service-detail__body">
+              <span class="service-detail__index">Ritual 08</span>
+              <span class="service-detail__cat">Hydro &amp; Heat</span>
+              <h2>Private Mineral Soak</h2>
+              <p>Solo or duo pool time with temperature presets and optional therapist check-in.</p>
+              <ul class="service-detail__points">
+                <li>Private pool time</li>
+                <li>Temp presets</li>
+                <li>Optional guide check-in</li>
+              </ul>
+              <div class="service-detail__meta">
+                <span class="service-detail__price">from $72</span>
+              </div>
+              <a href="404.html" class="btn btn--primary">Book soak</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Match your fatigue -->
+    <section class="svc-match" aria-label="Match your fatigue">
+      <div class="container">
+        <div class="svc-match__head" data-aos="fade-up">
+          <div>
+            <p class="section-kicker">Match</p>
+            <h2 class="section-title">Start with how the week felt</h2>
+          </div>
+          <p class="section-lead">Each fatigue type maps to a pathway — then pick timing that fits your evening.</p>
+        </div>
+        <div class="svc-match__grid">
+          <a href="404.html" class="match-path" data-aos="fade-up">
+            <figure class="match-path__media">
+              <img src="Images/wellness/service-massage.webp" alt="" width="640" height="480">
+            </figure>
+            <div class="match-path__body">
+              <span class="match-path__num">01</span>
+              <h3>Desk-tight shoulders</h3>
+              <p class="match-path__flow"><span>Massage</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Hydro cool-down</span></p>
+            </div>
+          </a>
+          <a href="404.html" class="match-path" data-aos="fade-up" data-aos-delay="60">
+            <figure class="match-path__media">
+              <img src="Images/wellness/service-sauna.webp" alt="" width="640" height="480">
+            </figure>
+            <div class="match-path__body">
+              <span class="match-path__num">02</span>
+              <h3>Travel fog</h3>
+              <p class="match-path__flow"><span>Contrast hydro</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Mineral facial</span></p>
+            </div>
+          </a>
+          <a href="404.html" class="match-path" data-aos="fade-up" data-aos-delay="120">
+            <figure class="match-path__media">
+              <img src="Images/wellness/service-mind.webp" alt="" width="640" height="480">
+            </figure>
+            <div class="match-path__body">
+              <span class="match-path__num">03</span>
+              <h3>Shallow sleep</h3>
+              <p class="match-path__flow"><span>Mind Studio</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Slow massage</span></p>
+            </div>
+          </a>
+          <a href="404.html" class="match-path" data-aos="fade-up" data-aos-delay="180">
+            <figure class="match-path__media">
+              <img src="Images/wellness/service-yoga.webp" alt="" width="640" height="480">
+            </figure>
+            <div class="match-path__body">
+              <span class="match-path__num">04</span>
+              <h3>Heavy legs &amp; joints</h3>
+              <p class="match-path__flow"><span>Movement lab</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Private soak</span></p>
+            </div>
+          </a>
+          <a href="404.html" class="match-path" data-aos="fade-up" data-aos-delay="240">
+            <figure class="match-path__media">
+              <img src="Images/wellness/service-facial.webp" alt="" width="640" height="480">
+            </figure>
+            <div class="match-path__body">
+              <span class="match-path__num">05</span>
+              <h3>Skin dullness</h3>
+              <p class="match-path__flow"><span>Salt wrap</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Lunar facial</span></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Composed rituals -->
+    <section class="svc-compose" aria-label="Composed rituals">
+      <div class="container">
+        <div class="svc-compose__head" data-aos="fade-up">
+          <p class="section-kicker">Composed</p>
+          <h2 class="section-title">Three rituals, already sequenced</h2>
+          <p class="section-lead">Pre-built afternoons — hydro, touch, and soft landing in one booking.</p>
+        </div>
+
+        <article class="compose-journey" data-aos="fade-up">
+          <div class="compose-journey__media">
+            <img src="Images/wellness/wellness-pool.webp" alt="Night Tide Reset mineral pool" width="900" height="700">
+            <span class="compose-journey__badge">120 min · from $248</span>
+          </div>
+          <div class="compose-journey__copy">
+            <span class="compose-journey__num">Journey 01</span>
+            <h3>Night Tide Reset</h3>
+            <p>Designed for overloaded evenings and shallow sleep — water first, then slow touch, then breath.</p>
+            <ol class="compose-journey__steps">
+              <li><span>1</span> Hydro contrast cycle</li>
+              <li><span>2</span> Slow restorative massage</li>
+              <li><span>3</span> Guided breath close</li>
+            </ol>
+            <a href="404.html" class="btn btn--primary">Reserve journey</a>
+          </div>
+        </article>
+
+        <article class="compose-journey compose-journey--flip" data-aos="fade-up">
+          <div class="compose-journey__media">
+            <img src="Images/wellness/ritual-2.webp" alt="Mineral Clarity facial and wrap tools" width="900" height="700">
+            <span class="compose-journey__badge">105 min · from $220</span>
+          </div>
+          <div class="compose-journey__copy">
+            <span class="compose-journey__num">Journey 02</span>
+            <h3>Mineral Clarity</h3>
+            <p>For skin and headspace that feel fogged — lymphatic work, salt wrap, then stillness.</p>
+            <ol class="compose-journey__steps">
+              <li><span>1</span> Lymphatic facial</li>
+              <li><span>2</span> Mineral salt wrap</li>
+              <li><span>3</span> Mind studio stillness</li>
+            </ol>
+            <a href="404.html" class="btn btn--primary">Reserve journey</a>
+          </div>
+        </article>
+
+        <article class="compose-journey" data-aos="fade-up">
+          <div class="compose-journey__media">
+            <img src="Images/wellness/ritual-3.webp" alt="Body Soft Landing movement studio" width="900" height="700">
+            <span class="compose-journey__badge">135 min · from $265</span>
+          </div>
+          <div class="compose-journey__copy">
+            <span class="compose-journey__num">Journey 03</span>
+            <h3>Body Soft Landing</h3>
+            <p>For joints that never quite switch off — movement, deep tissue, then heat to land.</p>
+            <ol class="compose-journey__steps">
+              <li><span>1</span> Restorative movement</li>
+              <li><span>2</span> Deep tissue massage</li>
+              <li><span>3</span> Heat &amp; hydro cycle</li>
+            </ol>
+            <a href="404.html" class="btn btn--primary">Reserve journey</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Add-ons -->
+    <section class="svc-addons" aria-label="Optional enhancements">
+      <div class="container svc-addons__inner">
+        <div class="svc-addons__intro" data-aos="fade-right">
+          <p class="section-kicker svc-addons__kicker">Enhance</p>
+          <h2 class="svc-addons__title">Small add-ons, clear doses</h2>
+          <p>Layer these onto any single treatment — never sold as upsell noise, only when they fit the protocol.</p>
+        </div>
+        <ul class="svc-addons__rail" data-aos="fade-left">
+          <li>
+            <figure><img src="Images/wellness/aromatherapy.webp" alt="Botanical oil blend" width="160" height="160"></figure>
+            <div>
+              <h3>Oil blend</h3>
+              <p>+$18 · custom scent-light mix</p>
+            </div>
+          </li>
+          <li>
+            <figure><img src="Images/wellness/nutrition.webp" alt="Mineral tea service" width="160" height="160"></figure>
+            <div>
+              <h3>Mineral tea</h3>
+              <p>+$12 · post-treatment tray</p>
+            </div>
+          </li>
+          <li>
+            <figure><img src="Images/wellness/facial.webp" alt="Scalp oil treatment tools" width="160" height="160"></figure>
+            <div>
+              <h3>Scalp oil</h3>
+              <p>+$28 · 15 min finish</p>
+            </div>
+          </li>
+          <li>
+            <figure><img src="Images/wellness/wellness-pool.webp" alt="Private cool plunge" width="160" height="160"></figure>
+            <div>
+              <h3>Cool plunge</h3>
+              <p>+$22 · guided two rinses</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Arrive ready -->
+    <section class="svc-prep" aria-label="How to arrive">
+      <div class="svc-prep__band">
+        <div class="svc-prep__bg">
+          <img src="Images/wellness/about-wellness.webp" alt="" width="1600" height="900">
+        </div>
+        <div class="svc-prep__shade" aria-hidden="true"></div>
+        <div class="container svc-prep__intro" data-aos="fade-up">
+          <p class="section-kicker svc-prep__kicker">Arrive ready</p>
+          <h2 class="svc-prep__title">What we ask before the first touch</h2>
+          <p class="svc-prep__text">A short prep keeps the suite calm and the protocol precise.</p>
+        </div>
+      </div>
+      <div class="container svc-prep__board" data-aos="fade-up">
+        <ol class="svc-prep__steps">
+          <li>
+            <span class="svc-prep__num">01</span>
+            <div>
+              <h3>Twenty quiet minutes</h3>
+              <p>Arrive early for intake, robe, and lounge settling.</p>
+            </div>
+          </li>
+          <li>
+            <span class="svc-prep__num">02</span>
+            <div>
+              <h3>Light meal only</h3>
+              <p>Avoid a heavy meal in the hour before hydro or wrap work.</p>
+            </div>
+          </li>
+          <li>
+            <span class="svc-prep__num">03</span>
+            <div>
+              <h3>Name the fatigue</h3>
+              <p>Tell your guide about sleep, screens, and where tension sits.</p>
+            </div>
+          </li>
+          <li>
+            <span class="svc-prep__num">04</span>
+            <div>
+              <h3>Leave space after</h3>
+              <p>Plan a soft exit — no back-to-back meetings if you can help it.</p>
+            </div>
+          </li>
+        </ol>
+        <figure class="svc-prep__side">
+          <img src="Images/wellness/contact-spa.webp" alt="Suite prepared before a guest arrives" width="640" height="800">
+          <figcaption>Suites are set before you arrive — linen cold, oils waiting.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Timing windows -->
+    <section class="svc-timing" aria-label="Timing windows">
+      <div class="container">
+        <div class="svc-timing__head" data-aos="fade-up">
+          <p class="section-kicker">Timing</p>
+          <h2 class="section-title">When each pathway lands best</h2>
+          <p class="section-lead">We protect evening slots for deeper reset work — mornings stay lighter.</p>
+        </div>
+        <div class="svc-timing__arc" data-aos="fade-up">
+          <article class="timing-slot">
+            <figure>
+              <img src="Images/wellness/yoga-studio.webp" alt="Morning movement studio light" width="720" height="480">
+            </figure>
+            <div class="timing-slot__body">
+              <p class="timing-slot__when">Morning · 9:00 – 12:00</p>
+              <h3>Lighter openings</h3>
+              <ul>
+                <li>Movement lab</li>
+                <li>Lunar facial</li>
+                <li>Private soak</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timing-slot">
+            <figure>
+              <img src="Images/wellness/facial.webp" alt="Afternoon facial and wrap light" width="720" height="480">
+            </figure>
+            <div class="timing-slot__body">
+              <p class="timing-slot__when">Afternoon · 12:00 – 17:00</p>
+              <h3>Clarity hours</h3>
+              <ul>
+                <li>Mineral Clarity ritual</li>
+                <li>Salt wrap</li>
+                <li>Mind Studio</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timing-slot timing-slot--tide">
+            <figure>
+              <img src="Images/wellness/wellness-pool.webp" alt="Night tide mineral pool" width="720" height="480">
+            </figure>
+            <div class="timing-slot__body">
+              <p class="timing-slot__when">Night tide · 17:00 – 21:00</p>
+              <h3>Deep reset window</h3>
+              <ul>
+                <li>Contrast hydro</li>
+                <li>Restorative massage</li>
+                <li>Night Tide Reset</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-label="Book your visit">
+      <div class="cta-band__media">
+        <img src="Images/wellness/contact-spa.webp" alt="Reception desk ready for booking" width="1600" height="900">
+      </div>
+      <div class="cta-band__veil" aria-hidden="true"></div>
+      <div class="cta-band__content" data-aos="fade-up">
+        <h2>Ready to choose a pathway?</h2>
+        <p>Tell us what your week felt like — we’ll recommend a ritual and a time.</p>
+        <div class="btn-group">
+          <a href="404.html" class="btn btn--primary">Book a Session</a>
+          <a href="404.html" class="btn btn--ghost">Start Membership</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="brand"><img src="Images/stackly-tide.webp" alt="Stackly" class="brand__logo" width="148" height="40"></a>
+        <p>A restorative spa for cool water, precise touch, and nights that finally soften.</p>
+        <div class="footer-social">
+          <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="404.html" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="404.html" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Explore</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="blogs.html">Journal</a></div>
+      <div class="footer-col"><h4>Members</h4><a href="login.html">Sign In</a><a href="register.html">Register</a><a href="404.html">Membership</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col footer-col--visit"><h4>Visit</h4><a href="404.html"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> 18 Tideglass Lane</a><a href="404.html"><i class="fa-solid fa-map" aria-hidden="true"></i> Harbor District</a><a href="404.html"><i class="fa-solid fa-phone" aria-hidden="true"></i> +1 (555) 018-2410</a><a href="404.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i> hello@stacklywellness.com</a></div>
+    </div>
+    <div class="container footer-bottom"><span>&copy; 2026 Stackly Wellness. All rights reserved.</span><span>ThemeForest-ready · Lunar Mineral Spa</span></div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/preloader.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

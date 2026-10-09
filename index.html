@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly Wellness | Lunar Mineral Spa & Restorative Centre</title>
+  <meta name="description" content="Stackly Wellness is a premium restorative spa offering mineral rituals, mindful movement, and quiet luxury by the night tide.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="preloader" id="preloader" role="status" aria-label="Loading Stackly Wellness"><img src="Images/stackly-tide.webp" alt="" class="preloader__logo" width="184" height="48"><div class="preloader__bar" aria-hidden="true"><i></i></div></div>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="brand" aria-label="Stackly Wellness home">
+        <img src="Images/stackly-tide.webp" alt="Stackly" class="brand__logo" width="148" height="40">
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blogs.html">Journal</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="login.html" class="btn btn--outline">Sign In</a>
+        <a href="register.html" class="btn btn--primary">Register</a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="blogs.html">Journal</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Sign In</a>
+    <a href="register.html" class="btn btn--primary">Register</a>
+  </nav>
+
+  <main>
+    <!-- 1. Video Hero -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero__media">
+        <video class="hero__video" autoplay muted loop playsinline poster="Images/wellness/wellness-hero.webp" aria-hidden="true">
+          <source src="Images/wellness-hero.mp4" type="video/mp4">
+        </video>
+        <img class="hero__fallback" src="Images/wellness/wellness-hero.webp" alt="Moonlit mineral pool reflecting soft spa lighting at Stackly Wellness" width="1600" height="1000">
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__content">
+        <h1 class="hero__brand">Stackly <em>Wellness</em></h1>
+        <p class="hero__headline">Restore like the tide — quietly, completely.</p>
+        <p class="hero__support">A mineral spa for deep rest, precise touch, and nights that soften the nervous system.</p>
+        <div class="btn-group hero__actions">
+          <a href="404.html" class="btn btn--primary">Book a Session</a>
+          <a href="404.html" class="btn btn--ghost">Explore Rituals</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Stats strip -->
+    <section class="stats" aria-label="Centre credentials">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stat" data-aos="fade-up">
+            <div class="stat__value">14</div>
+            <div class="stat__label">Years of care</div>
+          </div>
+          <div class="stat" data-aos="fade-up" data-aos-delay="80">
+            <div class="stat__value">8.2k</div>
+            <div class="stat__label">Members restored</div>
+          </div>
+          <div class="stat" data-aos="fade-up" data-aos-delay="160">
+            <div class="stat__value">28</div>
+            <div class="stat__label">Guiding therapists</div>
+          </div>
+          <div class="stat" data-aos="fade-up" data-aos-delay="240">
+            <div class="stat__value">94%</div>
+            <div class="stat__label">Return rate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Philosophy -->
+    <section class="section philosophy" id="about-teaser" aria-label="Our philosophy">
+      <div class="container philosophy__stage">
+        <div class="philosophy__media" data-aos="fade-right">
+          <figure class="philosophy__figure">
+            <img src="Images/wellness/about-wellness.webp" alt="Quiet treatment lounge with cool stone surfaces and soft mist lighting" width="800" height="1000">
+          </figure>
+          <div class="philosophy__years">
+            <strong>14</strong>
+            <span>Years of quiet care</span>
+          </div>
+        </div>
+
+        <div class="philosophy__copy" data-aos="fade-left">
+          <p class="section-kicker">Our philosophy</p>
+          <h2 class="philosophy__title">Mineral calm, <em>measured with intention</em></h2>
+          <p class="philosophy__lead">We design restorative hours around cool water, unhurried touch, and spaces that feel like night tide — not noise, not rush.</p>
+          <ul class="philosophy__pillars">
+            <li>
+              <span class="philosophy__index" aria-hidden="true">01</span>
+              <div>
+                <h3>Trained precision</h3>
+                <p>Therapists schooled in mineral hydrotherapy and fascia release.</p>
+              </div>
+            </li>
+            <li>
+              <span class="philosophy__index" aria-hidden="true">02</span>
+              <div>
+                <h3>Low sensory load</h3>
+                <p>Scent-light suites where the nervous system can finally drop.</p>
+              </div>
+            </li>
+            <li>
+              <span class="philosophy__index" aria-hidden="true">03</span>
+              <div>
+                <h3>Paced membership</h3>
+                <p>Recovery rhythms built for real rest — never volume booking.</p>
+              </div>
+            </li>
+          </ul>
+          <a href="404.html" class="btn btn--primary">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Rituals / pathways -->
+    <section class="section section--fog pathways" id="services" aria-label="Rituals">
+      <div class="container">
+        <div class="pathways__head" data-aos="fade-up">
+          <div class="pathways__intro">
+            <p class="section-kicker">Rituals</p>
+            <h2 class="section-title">Six pathways into deep rest</h2>
+          </div>
+          <div class="pathways__aside">
+            <p class="section-lead">Choose a single treatment or weave a longer journey across touch, heat, movement, and mind.</p>
+            <a href="404.html" class="link-draw">View full menu <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="pathways__grid">
+          <article class="pathway" data-aos="fade-up">
+            <a href="404.html" class="pathway__link">
+              <div class="pathway__media">
+                <img src="Images/wellness/service-massage.webp" alt="Hands performing a slow restorative massage on mineral-warmed linens" width="640" height="512">
+                <span class="pathway__num" aria-hidden="true">01</span>
+              </div>
+              <div class="pathway__body">
+                <div class="pathway__meta">
+                  <h3>Massage</h3>
+                  <span>60–90 min</span>
+                </div>
+                <p>Slow-pressure bodywork that lengthens fascia and settles the breath.</p>
+              </div>
+            </a>
+          </article>
+          <article class="pathway" data-aos="fade-up" data-aos-delay="80">
+            <a href="404.html" class="pathway__link">
+              <div class="pathway__media">
+                <img src="Images/wellness/service-yoga.webp" alt="Guided movement session on a mat in a cool-toned studio" width="640" height="512">
+                <span class="pathway__num" aria-hidden="true">02</span>
+              </div>
+              <div class="pathway__body">
+                <div class="pathway__meta">
+                  <h3>Movement</h3>
+                  <span>45–75 min</span>
+                </div>
+                <p>Mobility flows and restorative yoga for joints that carry too much.</p>
+              </div>
+            </a>
+          </article>
+          <article class="pathway" data-aos="fade-up" data-aos-delay="160">
+            <a href="404.html" class="pathway__link">
+              <div class="pathway__media">
+                <img src="Images/wellness/service-facial.webp" alt="Facial treatment with cool jade tools and soft spa lighting" width="640" height="512">
+                <span class="pathway__num" aria-hidden="true">03</span>
+              </div>
+              <div class="pathway__body">
+                <div class="pathway__meta">
+                  <h3>Facials</h3>
+                  <span>50–80 min</span>
+                </div>
+                <p>Mineral masks and lymphatic techniques for clear, quiet skin.</p>
+              </div>
+            </a>
+          </article>
+          <article class="pathway" data-aos="fade-up" data-aos-delay="80">
+            <a href="services.html" class="pathway__link">
+              <div class="pathway__media">
+                <img src="Images/wellness/service-sauna.webp" alt="Cedar hydro room with soft steam and night-tide ambience" width="640" height="512">
+                <span class="pathway__num" aria-hidden="true">04</span>
+              </div>
+              <div class="pathway__body">
+                <div class="pathway__meta">
+                  <h3>Hydro &amp; Heat</h3>
+                  <span>40–90 min</span>
+                </div>
+                <p>Contrast pools, steam, and sauna cycles calibrated for recovery.</p>
+              </div>
+            </a>
+          </article>
+          <article class="pathway" data-aos="fade-up" data-aos-delay="160">
+            <a href="404.html" class="pathway__link">
+              <div class="pathway__media">
+                <img src="Images/wellness/service-detox.webp" alt="Detox wrap station with mineral salts and cool stone bowls" width="640" height="512">
+                <span class="pathway__num" aria-hidden="true">05</span>
+              </div>
+              <div class="pathway__body">
+                <div class="pathway__meta">
+                  <h3>Detox</h3>
+                  <span>70–100 min</span>
+                </div>
+                <p>Salt wraps and lymphatic drainage that lighten without severity.</p>
+              </div>
+            </a>
+          </article>
+          <article class="pathway" data-aos="fade-up" data-aos-delay="240">
+            <a href="404.html" class="pathway__link">
+              <div class="pathway__media">
+                <img src="Images/wellness/service-mind.webp" alt="Mind studio with cushions arranged for guided breathwork" width="640" height="512">
+                <span class="pathway__num" aria-hidden="true">06</span>
+              </div>
+              <div class="pathway__body">
+                <div class="pathway__meta">
+                  <h3>Mind Studio</h3>
+                  <span>30–60 min</span>
+                </div>
+                <p>Breathwork, sound baths, and guided stillness under soft light.</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hydro quiet — image immersion -->
+    <section class="hydro-quiet" id="hydro-quiet" aria-label="Hydro quiet">
+      <div class="hydro-quiet__bg">
+        <img src="Images/wellness/service-sauna.webp" alt="Steam and soft light in the cedar hydro room" width="1600" height="1000">
+      </div>
+      <div class="hydro-quiet__veil" aria-hidden="true"></div>
+      <div class="container hydro-quiet__layout">
+        <div class="hydro-quiet__copy" data-aos="fade-up">
+          <p class="section-kicker hydro-quiet__kicker">Hydro quiet</p>
+          <h2 class="hydro-quiet__title">Warm water first. Then the rest follows.</h2>
+          <p class="hydro-quiet__text">Most visits begin on the hydro deck — contrast pools, soft steam, and a few unhurried minutes before any treatment starts.</p>
+          <a href="404.html" class="btn btn--primary">Explore hydro &amp; heat</a>
+        </div>
+        <div class="hydro-quiet__stack" data-aos="fade-left" data-aos-delay="100">
+          <figure class="hydro-quiet__frame hydro-quiet__frame--main">
+            <img src="Images/wellness/facial.webp" alt="Quiet facial suite with cool mineral light" width="720" height="900">
+          </figure>
+          <figure class="hydro-quiet__frame hydro-quiet__frame--inset">
+            <img src="Images/wellness/nutrition.webp" alt="Mineral tea and botanicals prepared for recovery" width="480" height="360">
+          </figure>
+          <p class="hydro-quiet__caption">Steam · contrast · soft landing</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Curated journeys -->
+    <section class="section journeys" id="rituals" aria-label="Curated journeys">
+      <div class="container">
+        <div class="section-head section-head--center" data-aos="fade-up">
+          <p class="section-kicker">Curated journeys</p>
+          <h2 class="section-title">Three rituals, fully composed</h2>
+          <p class="section-lead">Each journey pairs treatments into a single afternoon — browse all three, then book the one that matches your day.</p>
+        </div>
+
+        <div class="journey-list">
+          <article class="journey-row" data-aos="fade-up">
+            <div class="journey-row__media">
+              <img src="Images/wellness/wellness-pool.webp" alt="Expansive mineral pool under soft night-tide light — Night Tide Reset" width="900" height="600">
+              <span class="journey-row__badge">120 min</span>
+            </div>
+            <div class="journey-row__content">
+              <span class="journey-row__num">Journey 01</span>
+              <h3>Night Tide Reset</h3>
+              <p>Hydro contrast, slow massage, and a guided breath close — designed for overloaded evenings and shallow sleep.</p>
+              <ul class="journey-row__includes">
+                <li>Hydro contrast cycle</li>
+                <li>Slow restorative massage</li>
+                <li>Guided breath close</li>
+              </ul>
+              <a href="404.html" class="btn btn--primary">Reserve journey</a>
+            </div>
+          </article>
+
+          <article class="journey-row journey-row--flip" data-aos="fade-up">
+            <div class="journey-row__media">
+              <img src="Images/wellness/ritual-2.webp" alt="Aromatherapy oils beside a treatment bed — Mineral Clarity" width="900" height="600">
+              <span class="journey-row__badge">105 min</span>
+            </div>
+            <div class="journey-row__content">
+              <span class="journey-row__num">Journey 02</span>
+              <h3>Mineral Clarity</h3>
+              <p>Lymphatic facial, salt wrap, and mind studio stillness for skin and headspace that feel fogged.</p>
+              <ul class="journey-row__includes">
+                <li>Lymphatic facial</li>
+                <li>Mineral salt wrap</li>
+                <li>Mind studio stillness</li>
+              </ul>
+              <a href="404.html" class="btn btn--primary">Reserve journey</a>
+            </div>
+          </article>
+
+          <article class="journey-row" data-aos="fade-up">
+            <div class="journey-row__media">
+              <img src="Images/wellness/ritual-3.webp" alt="Quiet movement studio with aligned mats — Body Soft Landing" width="900" height="600">
+              <span class="journey-row__badge">135 min</span>
+            </div>
+            <div class="journey-row__content">
+              <span class="journey-row__num">Journey 03</span>
+              <h3>Body Soft Landing</h3>
+              <p>Restorative movement, deep tissue massage, and heat cycle for joints that never quite switch off.</p>
+              <ul class="journey-row__includes">
+                <li>Restorative movement</li>
+                <li>Deep tissue massage</li>
+                <li>Heat &amp; hydro cycle</li>
+              </ul>
+              <a href="404.html" class="btn btn--primary">Reserve journey</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Guides -->
+    <section class="section section--fog guides" id="therapists" aria-label="Guides">
+      <div class="container">
+        <div class="guides__head" data-aos="fade-up">
+          <div>
+            <p class="section-kicker">Guides</p>
+            <h2 class="section-title">Therapists who listen first</h2>
+          </div>
+          <p class="section-lead guides__lead">Four senior practitioners shaping the centre’s quiet, precise touch.</p>
+        </div>
+        <div class="guides__grid">
+          <article class="guide-card" data-aos="fade-up">
+            <div class="guide-card__media">
+              <img src="Images/wellness/therapist-1.webp" alt="Portrait of Mira Chen, lead restorative therapist" width="480" height="640">
+              <span class="guide-card__index">01</span>
+            </div>
+            <div class="guide-card__body">
+              <h3>Mira Chen</h3>
+              <p class="guide-card__role">Lead Restorative Therapist</p>
+              <p class="guide-card__note">Slow fascia work paired with breath-led closes.</p>
+              <ul class="guide-card__tags">
+                <li>Massage</li>
+                <li>12 yrs</li>
+              </ul>
+            </div>
+          </article>
+          <article class="guide-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="guide-card__media">
+              <img src="Images/wellness/therapist-2.webp" alt="Portrait of Elias Rowe, hydrotherapy specialist" width="480" height="640">
+              <span class="guide-card__index">02</span>
+            </div>
+            <div class="guide-card__body">
+              <h3>Elias Rowe</h3>
+              <p class="guide-card__role">Hydrotherapy Specialist</p>
+              <p class="guide-card__note">Contrast pools calibrated for deep recovery.</p>
+              <ul class="guide-card__tags">
+                <li>Hydro</li>
+                <li>9 yrs</li>
+              </ul>
+            </div>
+          </article>
+          <article class="guide-card" data-aos="fade-up" data-aos-delay="160">
+            <div class="guide-card__media">
+              <img src="Images/wellness/therapist-3.webp" alt="Portrait of Anika Sol, facial and skin guide" width="480" height="640">
+              <span class="guide-card__index">03</span>
+            </div>
+            <div class="guide-card__body">
+              <h3>Anika Sol</h3>
+              <p class="guide-card__role">Facial &amp; Skin Guide</p>
+              <p class="guide-card__note">Lymphatic techniques for clear, quiet skin.</p>
+              <ul class="guide-card__tags">
+                <li>Facials</li>
+                <li>10 yrs</li>
+              </ul>
+            </div>
+          </article>
+          <article class="guide-card" data-aos="fade-up" data-aos-delay="240">
+            <div class="guide-card__media">
+              <img src="Images/wellness/therapist-4.webp" alt="Portrait of Jonah Park, mind studio facilitator" width="480" height="640">
+              <span class="guide-card__index">04</span>
+            </div>
+            <div class="guide-card__body">
+              <h3>Jonah Park</h3>
+              <p class="guide-card__role">Mind Studio Facilitator</p>
+              <p class="guide-card__note">Sound baths and guided stillness under soft light.</p>
+              <ul class="guide-card__tags">
+                <li>Mind</li>
+                <li>8 yrs</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Membership -->
+    <section class="section membership" id="membership" aria-label="Membership">
+      <div class="container">
+        <div class="membership__intro" data-aos="fade-up">
+          <div class="membership__copy">
+            <p class="section-kicker">Membership</p>
+            <h2 class="section-title">Pace your restoration</h2>
+            <p class="section-lead">Three memberships — from first visits to full canopy access. Pause or change tier anytime.</p>
+          </div>
+          <figure class="membership__figure">
+            <img src="Images/wellness/membership.webp" alt="Member lounge with mineral water and soft seating" width="800" height="520">
+          </figure>
+        </div>
+        <div class="plans membership__plans">
+          <article class="plan" data-aos="fade-up">
+            <span class="plan__tier">Entry</span>
+            <h3 class="plan__name">Seed</h3>
+            <div class="plan__price">$89<span>/mo</span></div>
+            <p class="plan__desc">A gentle entry for monthly mineral care.</p>
+            <ul class="plan__features">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> 1 signature massage</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Hydro lounge access twice weekly</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Member booking window</li>
+            </ul>
+            <a href="404.html" class="btn btn--outline btn--block">Choose Seed</a>
+          </article>
+          <article class="plan plan--featured" data-aos="fade-up" data-aos-delay="80">
+            <span class="plan__badge">Most held</span>
+            <span class="plan__tier">Balanced</span>
+            <h3 class="plan__name">Bloom</h3>
+            <div class="plan__price">$169<span>/mo</span></div>
+            <p class="plan__desc">Our balanced rhythm for consistent recovery.</p>
+            <ul class="plan__features">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> 2 treatments of your choice</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Unlimited hydro &amp; heat</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> 1 Mind Studio class weekly</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Priority evening slots</li>
+            </ul>
+            <a href="404.html" class="btn btn--bloom btn--block">Choose Bloom</a>
+          </article>
+          <article class="plan" data-aos="fade-up" data-aos-delay="160">
+            <span class="plan__tier">Full access</span>
+            <h3 class="plan__name">Canopy</h3>
+            <div class="plan__price">$289<span>/mo</span></div>
+            <p class="plan__desc">Full immersion for those who live here.</p>
+            <ul class="plan__features">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> 4 treatments monthly</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Private suite hours</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Guest pass each month</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Dedicated therapist match</li>
+            </ul>
+            <a href="404.html" class="btn btn--outline btn--block">Choose Canopy</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Voices -->
+    <section class="section voices" id="testimonials" aria-label="Member voices">
+      <div class="container">
+        <div class="voices__head" data-aos="fade-up">
+          <div>
+            <p class="section-kicker">Voices</p>
+            <h2 class="section-title">What members notice first</h2>
+          </div>
+          <p class="section-lead voices__lead">Quiet notes from people who return — not for spectacle, for how they leave.</p>
+        </div>
+        <div class="voices__grid">
+          <blockquote class="voice" data-aos="fade-up">
+            <span class="voice__mark" aria-hidden="true">“</span>
+            <p class="voice__quote">The centre feels like cool water for the mind. I leave quieter than I arrived — every single time.</p>
+            <footer class="voice__person">
+              <img src="Images/wellness/therapist-3.webp" alt="Portrait of Leah V." width="80" height="80">
+              <div>
+                <cite>Leah V.</cite>
+                <span>Bloom · 2 years</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="voice voice--accent" data-aos="fade-up" data-aos-delay="80">
+            <span class="voice__mark" aria-hidden="true">“</span>
+            <p class="voice__quote">Night Tide Reset fixed my sleep more gently than anything I’ve tried. Precise therapists, zero theatrics.</p>
+            <footer class="voice__person">
+              <img src="Images/wellness/therapist-2.webp" alt="Portrait of Marcus D." width="80" height="80">
+              <div>
+                <cite>Marcus D.</cite>
+                <span>Canopy member</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="voice" data-aos="fade-up" data-aos-delay="160">
+            <span class="voice__mark" aria-hidden="true">“</span>
+            <p class="voice__quote">Mineral Clarity gave my skin and attention span the same gift: space. I book it like a monthly meeting with myself.</p>
+            <footer class="voice__person">
+              <img src="Images/wellness/therapist-4.webp" alt="Portrait of Priya N." width="80" height="80">
+              <div>
+                <cite>Priya N.</cite>
+                <span>Seed member</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Blog preview -->
+    <section class="section" id="journal">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up" style="display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:1rem">
+          <div>
+            <p class="section-kicker">Journal</p>
+            <h2 class="section-title">Notes from the mineral floor</h2>
+            <p class="section-lead">Short reads on recovery, ritual design, and quiet living.</p>
+          </div>
+          <a href="404.html" class="link-draw">All articles <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="grid-3">
+          <article class="blog-card" data-aos="fade-up">
+            <div class="blog-card__media">
+              <img src="Images/wellness/blog-1.webp" alt="Steam rising from a mineral bath at dusk" width="640" height="440">
+            </div>
+            <div>
+              <span class="blog-card__tag">Recovery</span>
+              <h3>Why contrast hydro works after long desk days</h3>
+              <p>How warm-to-cool cycles cue the parasympathetic system without drama.</p>
+              <a href="404.html" class="link-draw">Read note</a>
+            </div>
+          </article>
+          <article class="blog-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="blog-card__media">
+              <img src="Images/wellness/blog-2.webp" alt="Hands preparing botanical oils for massage" width="640" height="440">
+            </div>
+            <div>
+              <span class="blog-card__tag">Touch</span>
+              <h3>The case for slower massage pressure</h3>
+              <p>What fascia responds to when therapists stop racing the clock.</p>
+              <a href="404.html" class="link-draw">Read note</a>
+            </div>
+          </article>
+          <article class="blog-card" data-aos="fade-up" data-aos-delay="160">
+            <div class="blog-card__media">
+              <img src="Images/wellness/blog-3.webp" alt="Quiet meditation cushions in Mind Studio" width="640" height="440">
+            </div>
+            <div>
+              <span class="blog-card__tag">Mind</span>
+              <h3>Designing a room that lowers heart rate</h3>
+              <p>Lighting, scent load, and seating angles that invite stillness.</p>
+              <a href="404.html" class="link-draw">Read note</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Sanctuary rooms — image composition -->
+    <section class="section section--fog sanctuary" id="sanctuary" aria-label="Inside the centre">
+      <div class="container">
+        <div class="sanctuary__grid">
+          <div class="sanctuary__stack" data-aos="fade-right">
+            <figure class="sanctuary__frame sanctuary__frame--tall">
+              <img src="Images/wellness/massage-room.webp" alt="Quiet massage suite with cool stone and soft linen" width="800" height="1000">
+            </figure>
+            <figure class="sanctuary__frame sanctuary__frame--offset">
+              <img src="Images/wellness/yoga-studio.webp" alt="Movement studio with mats aligned under mist light" width="640" height="480">
+            </figure>
+          </div>
+          <div class="sanctuary__copy" data-aos="fade-left">
+            <p class="section-kicker">Spaces</p>
+            <h2 class="section-title">Rooms tuned for nervous-system quiet</h2>
+            <p class="section-lead">Every suite is built like a tide pool — cool materials, low scent load, and light that never shouts.</p>
+            <ol class="sanctuary__list">
+              <li>
+                <span class="sanctuary__num">01</span>
+                <div>
+                  <h3>Treatment suites</h3>
+                  <p>Sound-dampened rooms for massage, facial, and detox wrap work.</p>
+                </div>
+              </li>
+              <li>
+                <span class="sanctuary__num">02</span>
+                <div>
+                  <h3>Movement loft</h3>
+                  <p>Open floor for restorative flows and joint-softening mobility.</p>
+                </div>
+              </li>
+              <li>
+                <span class="sanctuary__num">03</span>
+                <div>
+                  <h3>Hydro deck</h3>
+                  <p>Contrast pools and steam cycles under night-tide lighting.</p>
+                </div>
+              </li>
+            </ol>
+            <a href="404.html" class="link-draw">Tour the centre <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Mineral atelier — full-bleed image panel -->
+    <section class="atelier" id="atelier" aria-label="Mineral atelier">
+      <div class="atelier__media">
+        <img src="Images/wellness/contact-spa.webp" alt="Spa treatment table prepared with mineral oils and soft towels" width="1600" height="1000">
+      </div>
+      <div class="atelier__veil" aria-hidden="true"></div>
+      <div class="atelier__panel" data-aos="fade-up">
+        <p class="section-kicker atelier__kicker">Atelier</p>
+        <h2>Where minerals meet precise touch</h2>
+        <p>Our treatment floor pairs cold-pressed botanicals with hydro-warmed stone — a craft space, not a clinic corridor.</p>
+        <ul class="atelier__tags">
+          <li>Salt &amp; mineral wraps</li>
+          <li>Lymphatic facials</li>
+          <li>Slow-pressure massage</li>
+        </ul>
+        <a href="404.html" class="btn btn--primary">See treatment menu</a>
+      </div>
+      <aside class="atelier__aside" data-aos="fade-left" data-aos-delay="120">
+        <img src="Images/wellness/aromatherapy.webp" alt="Botanical oils arranged for aromatherapy blending" width="480" height="640">
+      </aside>
+    </section>
+
+    <!-- 12. FAQ -->
+    <section class="section faq" id="faq" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="faq__top" data-aos="fade-up">
+          <div class="faq__intro">
+            <p class="section-kicker">Questions</p>
+            <h2 class="section-title">Before your first visit</h2>
+            <p class="section-lead">Clear answers so you can arrive already softer.</p>
+          </div>
+          <a href="404.html" class="faq__ask link-draw">Still unsure? Ask us <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="faq__list" data-aos="fade-up" data-aos-delay="60">
+          <details class="faq__item" open>
+            <summary>
+              <span class="faq__num">01</span>
+              <span class="faq__q">How early should I arrive for my first ritual?</span>
+            </summary>
+            <div class="faq__a">
+              <p>Plan for 20 minutes before your booking. We’ll walk you through the hydro lounge, lockers, and a short intake so your session can start unhurried.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>
+              <span class="faq__num">02</span>
+              <span class="faq__q">Do I need a membership to book a treatment?</span>
+            </summary>
+            <div class="faq__a">
+              <p>No. Single rituals and journeys are open to guests. Memberships simply unlock better pacing, lounge access, and priority evening slots.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>
+              <span class="faq__num">03</span>
+              <span class="faq__q">What should I wear for hydro and heat cycles?</span>
+            </summary>
+            <div class="faq__a">
+              <p>A swimsuit or spa wrap is ideal. Robes, towels, and slippers are provided in every suite and on the hydro deck.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>
+              <span class="faq__num">04</span>
+              <span class="faq__q">Can I combine massage with Mind Studio in one visit?</span>
+            </summary>
+            <div class="faq__a">
+              <p>Yes. Our curated journeys already pair them, or your therapist can build a custom afternoon when you book through Contact.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>
+              <span class="faq__num">05</span>
+              <span class="faq__q">Is the centre suitable if I’m sensitive to scent?</span>
+            </summary>
+            <div class="faq__a">
+              <p>We keep scent load intentionally low. Ask for an unscented protocol when booking — most treatments adapt cleanly without fragrance.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. Newsletter -->
+    <section class="newsletter" id="newsletter" aria-label="Newsletter subscription">
+      <div class="newsletter__media" aria-hidden="true">
+        <img src="Images/wellness/aromatherapy.webp" alt="" width="1600" height="900">
+      </div>
+      <div class="newsletter__veil" aria-hidden="true"></div>
+      <div class="container newsletter__stage" data-aos="fade-up">
+        <div class="newsletter__panel">
+          <p class="section-kicker newsletter__kicker">Stay soft</p>
+          <h2 class="newsletter__title">Mineral notes, once a month</h2>
+          <p class="newsletter__text">Recovery prompts, new rituals, and member hours — no noise, unsubscribe anytime.</p>
+          <form class="newsletter__form" data-validate novalidate>
+            <div class="form-group newsletter__field">
+              <label for="newsletter-email" class="sr-only">Email address</label>
+              <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required autocomplete="email">
+              <span class="form-error">Please enter a valid email.</span>
+            </div>
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+            <p class="form-success" role="status">You’re on the list — thank you for joining Stackly Wellness.</p>
+          </form>
+          <ul class="newsletter__perks">
+            <li>Monthly only</li>
+            <li>No promo spam</li>
+            <li>Member-first hours</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. CTA band -->
+    <section class="cta-band" aria-label="Book your visit">
+      <div class="cta-band__media">
+        <img src="Images/wellness/wellness-pool.webp" alt="Expansive mineral pool stretching edge to edge under soft night light" width="1600" height="900">
+      </div>
+      <div class="cta-band__veil" aria-hidden="true"></div>
+      <div class="cta-band__content" data-aos="fade-up">
+        <h2>Begin your lunar reset</h2>
+        <p>Book a first ritual or open a membership — we’ll match you with the right guide.</p>
+        <div class="btn-group">
+          <a href="404.html" class="btn btn--primary">Book a Session</a>
+          <a href="404.html" class="btn btn--ghost">Create Account</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="brand">
+          <img src="Images/stackly-tide.webp" alt="Stackly" class="brand__logo" width="148" height="40">
+        </a>
+        <p>A restorative spa for cool water, precise touch, and nights that finally soften.</p>
+        <div class="footer-social">
+          <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="404.html" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="404.html" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blogs.html">Journal</a>
+      </div>
+      <div class="footer-col">
+        <h4>Members</h4>
+        <a href="login.html">Sign In</a>
+        <a href="register.html">Register</a>
+        <a href="404.html">Membership</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col footer-col--visit">
+        <h4>Visit</h4>
+        <a href="404.html"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> 18 Tideglass Lane</a>
+        <a href="404.html"><i class="fa-solid fa-map" aria-hidden="true"></i> Harbor District</a>
+        <a href="404.html"><i class="fa-solid fa-phone" aria-hidden="true"></i> +1 (555) 018-2410</a>
+        <a href="404.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i> hello@stacklywellness.com</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Stackly Wellness. All rights reserved.</span>
+      <span>ThemeForest-ready · Lunar Mineral Spa</span>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/preloader.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
