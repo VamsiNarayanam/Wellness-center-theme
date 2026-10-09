@@ -7329,6 +7329,25 @@ a.visit-tile:hover {
   color: var(--muted);
 }
 
+/* Hide browser-native password reveal (Edge / IE) */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 0.55rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--seaglass);
+  text-align: right;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
 .form-row {
   display: grid;
   gap: 1rem;
